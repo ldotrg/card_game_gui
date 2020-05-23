@@ -271,10 +271,10 @@ class CardGame:
 
     def flipCard(self, color):  # change card according to the color
         index = random.randint(0, 25)
-        if color is "red":
+        if color == "red":
             self.cardWindow.configure(image=self.cardRedImg[index])
             self.cardWindow.image = self.cardRedImg[index]
-        elif color is "black":
+        elif color == "black":
             self.blackcardWindow.configure(image=self.cardBlackImg[index])
             self.blackcardWindow.image = self.cardBlackImg[index]
             self.countdown2(10)
